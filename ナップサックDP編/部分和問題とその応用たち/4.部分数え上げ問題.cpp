@@ -10,12 +10,12 @@ int main() {
 
 	vector<vector<int>> dp(n+1, vector<int> (m+1));
 	dp[0][0] = 1;
-    int MOD = 1000;
+	int MOD = 1000;
 	rep(i, n) rep(j, m+1) {
 		dp[i+1][j] += dp[i][j];
 		if (j-a[i] >= 0) dp[i+1][j] += dp[i][j-a[i]];
-        dp[i+1][j] %= MOD;
+		dp[i+1][j] %= MOD;
 	}
-
+	
 	cout << dp[n][m]%MOD << endl;
 }
