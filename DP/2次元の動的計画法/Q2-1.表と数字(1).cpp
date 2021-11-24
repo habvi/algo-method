@@ -11,6 +11,6 @@ int main() {
 		if (j-1 >= 0) t[i][j] += t[i-1][j-1];
 		if (j+1 < 4) t[i][j] += t[i-1][j+1];
 	}
-
+	
 	cout << t[3][3] << endl;
 }

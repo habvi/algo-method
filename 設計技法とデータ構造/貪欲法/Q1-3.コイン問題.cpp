@@ -16,6 +16,6 @@ int main() {
 		ans += m;
 		n -= k[i]*m;
 	}
-
+	
 	cout << ans << endl;
 }

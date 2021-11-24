@@ -25,11 +25,11 @@ int main() {
 		cout << -1 << endl;
 		return 0;
 	}
-
+	
 	ll a = M / G;
 	ll ans = 100100100100100;
 	vector<ll> res = divisors(a);
-	for (auto &v: res) {
+	for (auto v : res) {
 		if (gcd(v, a / v) != 1) continue;
 		ans = min(ans, G * v + G * a / v);
 	}

@@ -10,7 +10,7 @@ int main() {
 	vvi s(n, vi(2));
 	rep(i, n) cin >> s[i][1] >> s[i][0];
 	sort(s.begin(), s.end());
-
+	
 	int now = 0, ans = 0;
 	rep(i, n) {
 		if (now <= s[i][1]) {
@@ -18,6 +18,6 @@ int main() {
 			now = s[i][0];
 		}
 	}
-
+	
 	cout << ans << endl;
 }

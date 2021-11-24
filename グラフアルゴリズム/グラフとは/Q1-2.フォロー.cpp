@@ -12,7 +12,7 @@ int main() {
 		cin >> a >> b;
 		A[a].push_back(b);
 	}
-
+	
 	for (vector<int> x:A){
 		sort(x.begin(), x.end());
 		for (int y:x) {

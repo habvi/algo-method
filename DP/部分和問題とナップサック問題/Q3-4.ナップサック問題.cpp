@@ -8,7 +8,7 @@ int main() {
 	vector<int> w(n), v(n);
 	rep(i, n) cin >> w[i];
 	rep(i, n) cin >> v[i];
-
+	
 	vector<vector<int>> dp(n+1, vector<int> (m+1, -1));
 	dp[0][0] = 0;
 	rep(i, n) for (int j = 0; j <= m; ++j) {
@@ -16,7 +16,7 @@ int main() {
 		dp[i+1][j] = max(dp[i+1][j], dp[i][j]);
 		if (j+w[i] <= m) dp[i+1][j+w[i]] = max(dp[i+1][j+w[i]], dp[i][j] + v[i]);
 	}
-
+	
 	int ans = 0;
 	for (int j = 0; j <= m; ++j) ans = max(ans, dp[n][j]);
 	cout << ans << endl;

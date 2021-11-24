@@ -7,7 +7,7 @@ int main() {
 	int n, m; cin >> n >> m;
 	vector<int> w(n);
 	rep(i, n) cin >> w[i];
-
+	
 	int INF = 1001001;
 	vector<vector<int>> dp(n+1, vector<int> (m+1, INF));
 	dp[0][0] = 0;
@@ -16,7 +16,7 @@ int main() {
 		if (j+w[i] <= m) dp[i+1][j+w[i]] = min(dp[i+1][j+w[i]], dp[i][j] + 1);
 		dp[i+1][j] = min(dp[i+1][j], dp[i][j]);
 	}
-
+	
 	if (dp[n][m] != INF) cout << dp[n][m] << endl;
 	else cout << -1 << endl;
 }

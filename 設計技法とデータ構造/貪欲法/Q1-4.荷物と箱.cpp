@@ -11,7 +11,7 @@ int main() {
 	rep(i, n) cin >> a[i];
 	rep(i, m) cin >> b[i];
 	sort(a.begin(), a.end());
-
+	
 	int ans = 0, j = 0;
 	rep(i, n) {
 		while (j < m && b[j] < a[i]) ++j;
@@ -19,6 +19,6 @@ int main() {
 		++j;
 		++ans;
 	}
-
+	
 	cout << ans << endl;
 }

@@ -10,11 +10,11 @@ int main() {
 	int n; cin >> n;
 	vector<P> s(n);
 	rep(i, n) cin >> s[i].first >> s[i].second;
-
+	
 	sort(s.begin(), s.end(), [&](P x, P y) {
 		return x.second < y.second;
 	});
-
+	
 	int now = 0, ans = 0;
 	rep(i, n) {
 		if (now <= s[i].first) {
@@ -22,6 +22,6 @@ int main() {
 			now = s[i].second;
 		}
 	}
-
+	
 	cout << ans << endl;
 }

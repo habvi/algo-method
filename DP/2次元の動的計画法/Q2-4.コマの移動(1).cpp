@@ -11,6 +11,6 @@ int main() {
 		if (j+1 < n) dp[i][j+1] += dp[i][j];
 		if (i+1 < n) dp[i+1][j] += dp[i][j];
 	}
-
+	
 	cout << dp[n-1][n-1] << endl;
 }

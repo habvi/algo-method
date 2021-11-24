@@ -10,7 +10,7 @@ int main() {
 		cin >> w[i];
 		sum += w[i];
 	}
-
+	
 	vector<vector<int>> dp(n+1, vector<int>(sum+5, 0));
 	dp[0][0] = 1;
 	rep(i, n) rep(j, sum+1) {
@@ -18,7 +18,7 @@ int main() {
 		if (j+w[i] <= sum) dp[i+1][j+w[i]] = 1;
 		dp[i+1][j] |= dp[i][j];
 	}
-
+	
 	int ans = 1001001001;
 	rep(j, sum+1) {
 		if (dp[n][j]) ans = min(ans, abs((sum - j) - j));

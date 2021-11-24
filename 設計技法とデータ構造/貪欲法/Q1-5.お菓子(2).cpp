@@ -13,6 +13,6 @@ int main() {
 		else --n;
 		++ans;
 	}
-
+	
 	cout << ans << endl;
 }

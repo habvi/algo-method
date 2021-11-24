@@ -9,7 +9,7 @@ int main() {
 	int n; cin >> n;
 	vvi xy(n, vi(2));
 	rep(i, n) cin >> xy[i][0] >> xy[i][1];
-
+	
 	vi usd(n);
 	int now = 0;
 	double ans = 0;
@@ -28,7 +28,7 @@ int main() {
 		ans += sqrt(mn);
 		now = k;
 	}
-
+	
 	ans += sqrt(pow(xy[0][0] - xy[now][0], 2) + pow(xy[0][1] - xy[now][1], 2));
 	cout << ans << endl;
 }

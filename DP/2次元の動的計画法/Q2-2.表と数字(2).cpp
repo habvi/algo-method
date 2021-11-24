@@ -7,7 +7,7 @@ int main() {
 	int n; cin >> n;
 	vector<int> a(n);
 	rep(i, n) cin >> a[i];
-
+	
 	vector<vector<int>> dp(n, vector<int> (n));
 	rep(i, n) dp[0][i] = a[i];
 	int MOD = 100;
@@ -17,6 +17,6 @@ int main() {
 		if (j+1 < n) dp[i][j] += dp[i-1][j+1];
 		dp[i][j] %= MOD;
 	}
-
+	
 	cout << dp[n-1][n-1] << endl;
 }

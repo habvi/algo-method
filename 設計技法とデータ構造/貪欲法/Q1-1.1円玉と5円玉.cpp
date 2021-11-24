@@ -13,6 +13,6 @@ int main() {
 		cnt += n/i;
 		n %= i;
 	}
-
+	
 	cout << cnt << endl;
 }
