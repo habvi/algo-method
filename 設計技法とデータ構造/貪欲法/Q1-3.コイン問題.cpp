@@ -3,7 +3,6 @@ using namespace std;
 #define rep(i, n) for (int i = 0; i < (n); i++)
 #define _GLIBCXX_DEBUG
 using vi = vector<int>;
-using vvi = vector<vi>;
 
 int main() {
 	int n, a0, a1, a2, a3;
@@ -12,9 +11,9 @@ int main() {
 	int ans = 0;
 	rep(i, 4) {
 		int m = 0;
-		m = min(n/k[i], a[i]);
+		m = min(n / k[i], a[i]);
 		ans += m;
-		n -= k[i]*m;
+		n -= k[i] * m;
 	}
 	
 	cout << ans << endl;
