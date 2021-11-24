@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define rep(i, n) for (int i = 0; i < (n); ++i)
-using P = pair<int, int>;
 
 int main() {
 	int n, m;
@@ -13,9 +12,9 @@ int main() {
 		A[a].push_back(b);
 	}
 	
-	for (vector<int> x:A){
+	for (vector<int> x : A){
 		sort(x.begin(), x.end());
-		for (int y:x) {
+		for (int y : x) {
 			cout << y << " ";
 		}
 		cout << endl;
