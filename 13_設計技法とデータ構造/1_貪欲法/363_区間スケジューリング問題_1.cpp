@@ -6,7 +6,8 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 
 int main() {
-	int n; cin >> n;
+	int n;
+	cin >> n;
 	vvi s(n, vi(2));
 	rep(i, n) cin >> s[i][1] >> s[i][0];
 	sort(s.begin(), s.end());

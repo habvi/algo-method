@@ -5,7 +5,8 @@ using namespace std;
 using vi = vector<int>;
 
 int main() {
-	int n; cin >> n;
+	int n;
+	cin >> n;
 	vi a = {5, 1};
 	int cnt = 0;
 	for (auto i : a) {

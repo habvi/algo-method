@@ -5,7 +5,8 @@ using namespace std;
 using P = pair<int, int>;
 
 int main() {
-	int n; cin >> n;
+	int n;
+	cin >> n;
 	vector<P> s(n);
 	rep(i, n) cin >> s[i].first >> s[i].second;
 	

@@ -8,6 +8,6 @@ int main() {
     cin >> n;
     rep(i, 1, 7) rep(j, 1, 7) {
         if (i + j == n) ans++;
-        }
+    }
     cout << ans << endl;
 }

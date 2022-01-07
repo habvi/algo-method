@@ -3,7 +3,8 @@ using namespace std;
 #define _GLIBCXX_DEBUG
 
 int main() {
-	int n; cin >> n;
+	int n;
+	cin >> n;
 	int cnt = 0;
 	while (n > 0) {
 		cnt += 1;

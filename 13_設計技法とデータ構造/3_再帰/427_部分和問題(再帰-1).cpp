@@ -9,13 +9,14 @@ bool f(int i, int j, vi &a) {
 		return false;
 	}
 	bool fl = false;
-	if (j >= a[i-1] && f(i-1, j-a[i-1], a)) fl = true;
-	if (f(i-1, j, a)) fl = true;
+	if (j >= a[i - 1] && f(i - 1, j - a[i - 1], a)) fl = true;
+	if (f(i - 1, j, a)) fl = true;
 	return fl;
 }
 
 int main() {
-	int n, x; cin >> n >> x;
+	int n, x;
+	cin >> n >> x;
 	vi a(n);
 	rep(i, n) cin >> a[i];
 	cout << (f(n, x, a) ? "Yes" : "No") << endl;

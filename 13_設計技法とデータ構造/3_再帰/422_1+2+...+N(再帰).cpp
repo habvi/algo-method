@@ -3,7 +3,7 @@ using namespace std;
 
 int f(int x) {
 	if (x == 0) return 0;
-	return f(x-1) + x;
+	return f(x - 1) + x;
 }
 
 int main() {

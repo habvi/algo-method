@@ -4,20 +4,21 @@ using namespace std;
 #define _GLIBCXX_DEBUG
 
 int main() {
-	int n, sum; cin >> n;
+	int n, sum = 0;
+	cin >> n;
 	vector<int> w(n);
 	rep(i, n) {
 		cin >> w[i];
 		sum += w[i];
 	}
 	
-	int mx = 50*1000+5;
-	vector<vector<int>> dp(n+1, vector<int>(mx, 0));
+	int mx = 50*1000 + 5;
+	vector<vector<int>> dp(n + 1, vector<int>(mx, 0));
 	dp[0][0] = 1;
 	rep(i, n) rep(j, mx) {
 		if (!dp[i][j]) continue;
-		if (j+w[i] < mx) dp[i+1][j+w[i]] = 1;
-		dp[i+1][j] |= dp[i][j];
+		if (j + w[i] < mx) dp[i + 1][j + w[i]] = 1;
+		dp[i + 1][j] |= dp[i][j];
 	}
 	
 	int ans = 1001001001;

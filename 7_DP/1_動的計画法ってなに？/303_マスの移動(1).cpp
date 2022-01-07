@@ -12,7 +12,7 @@ int main() {
 	for (int i = 1; i < n; ++ i) {
 		dp[i] = min(dp[i], dp[i-1] + A[i]);
 		if (i >= 2)
-			dp[i] = min(dp[i], dp[i-2] + 2 * A[i]);
+			dp[i] = min(dp[i], dp[i - 2] + 2 * A[i]);
 	}
-	cout << dp[n-1] << endl;
+	cout << dp[n - 1] << endl;
 }

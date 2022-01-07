@@ -6,14 +6,15 @@ using vi = vector<int>;
 using vvi = vector<vi>;
 
 int main() {
-	int n; cin >> n;
+	int n;
+	cin >> n;
 	vvi xy(n, vi(2));
 	rep(i, n) cin >> xy[i][0] >> xy[i][1];
 	
 	vi usd(n);
 	int now = 0;
 	double ans = 0;
-	rep(i, n-1) {
+	rep(i, n - 1) {
 		usd[now] = 1;
 		double mn = 1001001001, b = 0;
 		int k;

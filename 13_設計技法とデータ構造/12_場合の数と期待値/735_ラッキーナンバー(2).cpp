@@ -11,5 +11,5 @@ int main() {
     
     int tot = 1000;
     int mn = 10 - n;
-    cout << tot - mn*mn*mn << endl;
+    cout << tot - mn * mn * mn << endl;
 }

@@ -5,7 +5,8 @@ using namespace std;
 using vi = vector<int>;
 
 int main() {
-	int n, m; cin >> n >> m;
+	int n, m;
+	cin >> n >> m;
 	vi a(n), b(m);
 	rep(i, n) cin >> a[i];
 	rep(i, m) cin >> b[i];
