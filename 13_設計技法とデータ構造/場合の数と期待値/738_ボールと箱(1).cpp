@@ -5,7 +5,7 @@ using namespace std;
 using ll = long long;
 
 int main() {
-	int n, m;
+    int n, m;
     cin >> n >> m;
     ll ans = 1;
     rep(i, 0, m) {
