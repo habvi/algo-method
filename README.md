@@ -1,2 +1,2 @@
-# algo-method
+アルゴ式  
 https://algo-method.com/tasks
