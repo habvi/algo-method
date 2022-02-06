@@ -4,7 +4,7 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; ++i)
 
 int main() {
-	int n, a, b, c;
+    int n, a, b, c;
     cin >> n >> a >> b >> c;
 
     long long ans = 1;
