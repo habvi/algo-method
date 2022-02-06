@@ -8,7 +8,7 @@ int main() {
     cin >> n;
     vector<int> a(n);
     rep(i, 0, n) cin >> a[i];
-    
+
     int tot = 1000;
     int mn = 10 - n;
     cout << tot - mn * mn * mn << endl;

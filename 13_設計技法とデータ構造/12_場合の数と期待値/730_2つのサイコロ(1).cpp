@@ -6,6 +6,7 @@ using namespace std;
 int main() {
     int n, ans = 0;
     cin >> n;
+
     rep(i, 1, 7) rep(j, 1, 7) {
         if (i + j == n) ans++;
     }
