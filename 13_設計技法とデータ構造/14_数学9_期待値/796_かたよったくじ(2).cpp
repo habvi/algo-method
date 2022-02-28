@@ -6,7 +6,8 @@ using namespace std;
 int main() {
     int m;
     cin >> m;
-    double total = 0, num = 0;
+
+    int total = 0, num = 0;
     rep(i, 0, m) {
         int a, c;
         cin >> a >> c;
@@ -15,5 +16,7 @@ int main() {
         num += c;
     }
 
-    cout << total / num << endl;
+    double ans = (double)total / num;
+    cout << fixed << setprecision(10);
+    cout << ans << endl;
 }
