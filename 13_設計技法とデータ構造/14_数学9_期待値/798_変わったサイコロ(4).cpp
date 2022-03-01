@@ -4,16 +4,16 @@ using namespace std;
 #define rep(i, a, b) for (int i = a; i < b; ++i)
 
 int main() {
-    int m;
-    cin >> m;
-    vector<int> A(m), P(m);
-    rep(i, 0, m) cin >> A[i] >> P[i];
+    int n;
+    cin >> n;
+    vector<int> P(n);
+    rep(i, 0, n) cin >> P[i];
 
     int total = 0;
-    rep(i, 0, m) total += A[i] * P[i];
-
-    double ans = total / 100.0;
+    rep(i, 0, n) {
+        total += (i + 1) * P[i];
+    }
 
     cout << fixed << setprecision(10);
-    cout << ans << endl;
+    cout << total / 100.0 << endl;
 }

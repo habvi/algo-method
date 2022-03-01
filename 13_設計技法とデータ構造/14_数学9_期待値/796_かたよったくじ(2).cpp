@@ -17,6 +17,7 @@ int main() {
     }
 
     double ans = (double)total / num;
+
     cout << fixed << setprecision(10);
     cout << ans << endl;
 }
