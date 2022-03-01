@@ -9,7 +9,8 @@ int main() {
     vector<int> A(n);
     rep(i, 0, n) cin >> A[i];
 
-    double total = 0;
-    for (auto a: A) total += a;
+    double total = accumulate(A.begin(), A.end(), 0);
+
+    cout << fixed << setprecision(10);
     cout << total / n << endl;
 }
