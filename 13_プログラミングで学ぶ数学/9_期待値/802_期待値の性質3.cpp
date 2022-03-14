@@ -21,5 +21,11 @@ int main() {
         ans += B[i] * Q[i] / 100.0;
     }
 
+    // rep(i, 0, n) {
+    //     rep(j, 0, m) {
+    //         ans += (A[i] + B[j]) * (P[i] / 100.0) * (Q[j] / 100.0);
+    //     }
+    // }
+
     cout << ans << endl;
 }
