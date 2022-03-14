@@ -7,6 +7,7 @@ int main() {
     int m, k;
     cin >> m >> k;
     // cout << k << endl;
+    // return 0;
 
     vector<int> A(m), P(m);
     rep(i, 0, m) cin >> A[i] >> P[i];
