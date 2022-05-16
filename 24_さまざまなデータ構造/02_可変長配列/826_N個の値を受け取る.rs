@@ -21,8 +21,8 @@ fn input_i_vec() -> Vec<usize> {
 }
 
 fn main() {
-    let (n, k) = input_multi_i();
-    let v = input_i_vec();
+    let (n, k) : (usize, usize) = input_multi_i();
+    let v: Vec<usize> = input_i_vec();
 
     println!("{}", v[k]);
     println!("{}", v[n - k - 1]);

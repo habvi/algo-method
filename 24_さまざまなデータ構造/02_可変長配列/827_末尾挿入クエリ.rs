@@ -33,7 +33,7 @@ fn main() {
 
     let q: usize = input_i();
     for _ in 0..q {
-        let (qi, k) = input_multi_i();
+        let (qi, k): (usize, usize) = input_multi_i();
         if qi == 0 {
             match v.get(k) {
                 None => println!("Error"),
