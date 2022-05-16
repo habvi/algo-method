@@ -16,19 +16,19 @@ fn input_i_vec() -> Vec<usize> {
 }
 
 fn main() {
-    let mut v = vec![3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+    let mut arr: [usize; 10] = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
 
-    let Q: usize = input_i();
-    for _ in 0..Q {
-        let q: Vec<usize> = input_i_vec();
+    let q: usize = input_i();
+    for _ in 0..q {
+        let qs: Vec<usize> = input_i_vec();
 
-        if q[0] == 0 {
-            let k: usize = q[1];
-            println!("{}", v[k]);
+        if qs[0] == 0 {
+            let k: usize = qs[1];
+            println!("{}", arr[k]);
         } else {
-            let k: usize = q[1];
-            let x: usize = q[2];
-            v[k] = x;
+            let k: usize = qs[1];
+            let x: usize = qs[2];
+            arr[k] = x;
         }
     }
 }
