@@ -28,8 +28,8 @@ fn main() {
             stack.push(x);
         } else {
             match stack.pop() {
-                None => println!("Error"),
                 Some(x) => println!("{}", x),
+                None => println!("Error"),
             }
         }
     }

@@ -36,8 +36,8 @@ fn main() {
         let (qi, k): (usize, usize) = input_multi_i();
         if qi == 0 {
             match v.get(k) {
-                None => println!("Error"),
                 Some(x) => println!("{}", x),
+                None => println!("Error"),
             }
         } else {
             v.push(k);
