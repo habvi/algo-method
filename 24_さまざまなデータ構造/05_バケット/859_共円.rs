@@ -16,7 +16,7 @@ fn main() {
         for j in -100..=100 {
             let x: usize = (i * i + j * j) as usize;
             if x <= MX {
-                num[x as usize] += 1;
+                num[x] += 1;
             }
         }
     }
